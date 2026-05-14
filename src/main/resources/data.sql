@@ -1,0 +1,60 @@
+INSERT INTO product (productid, name, description, price, quantity, category, brand, imageurl, created_date, status) VALUES
+-- Laptops (1-10)
+(1, 'MacBook Pro 14', 'Apple M2 Pro, 16GB RAM, 512GB SSD', 1999.99, 45, 'Laptop', 'Apple', 'https://example.com/img/mac14.jpg', '2026-05-01', 'ACTIVE'),
+(2, 'MacBook Air M2', 'Apple M2, 8GB RAM, 256GB SSD', 1199.99, 120, 'Laptop', 'Apple', 'https://example.com/img/macair.jpg', '2026-05-02', 'ACTIVE'),
+(3, 'Dell XPS 13', 'Intel Core i7 13th Gen, 16GB RAM, 512GB SSD', 1399.50, 30, 'Laptop', 'Dell', 'https://example.com/img/xps13.jpg', '2026-05-03', 'ACTIVE'),
+(4, 'Dell XPS 15', 'Intel Core i9, 32GB RAM, 1TB SSD, RTX 4070', 2499.00, 15, 'Laptop', 'Dell', 'https://example.com/img/xps15.jpg', '2026-05-04', 'ACTIVE'),
+(5, 'ThinkPad X1 Carbon', 'Intel Core i7, 16GB RAM, 512GB SSD', 1599.00, 40, 'Laptop', 'Lenovo', 'https://example.com/img/x1carbon.jpg', '2026-05-05', 'ACTIVE'),
+(6, 'ThinkPad T14', 'AMD Ryzen 7 Pro, 16GB RAM, 512GB SSD', 1299.00, 60, 'Laptop', 'Lenovo', 'https://example.com/img/t14.jpg', '2026-05-06', 'ACTIVE'),
+(7, 'HP Spectre x360', 'Intel Core i7, 16GB RAM, 1TB SSD', 1499.99, 25, 'Laptop', 'HP', 'https://example.com/img/spectre.jpg', '2026-05-07', 'ACTIVE'),
+(8, 'HP Envy 13', 'Intel Core i5, 8GB RAM, 512GB SSD', 899.99, 80, 'Laptop', 'HP', 'https://example.com/img/envy.jpg', '2026-05-08', 'ACTIVE'),
+(9, 'Asus ROG Zephyrus G14', 'AMD Ryzen 9, 16GB RAM, 1TB SSD, RTX 4060', 1699.00, 20, 'Laptop', 'Asus', 'https://example.com/img/rog.jpg', '2026-05-09', 'ACTIVE'),
+(10, 'Acer Predator Helios', 'Intel Core i7, 16GB RAM, 1TB SSD, RTX 4070', 1599.00, 18, 'Laptop', 'Acer', 'https://example.com/img/predator.jpg', '2026-05-10', 'ACTIVE'),
+
+-- Smartphones (11-20)
+(11, 'iPhone 15 Pro Max', 'Titanium, 256GB, A17 Pro Bionic', 1199.00, 200, 'Smartphone', 'Apple', 'https://example.com/img/ip15pm.jpg', '2026-05-01', 'ACTIVE'),
+(12, 'iPhone 15', '128GB, A16 Bionic', 799.00, 300, 'Smartphone', 'Apple', 'https://example.com/img/ip15.jpg', '2026-05-02', 'ACTIVE'),
+(13, 'Galaxy S24 Ultra', 'Titanium, 512GB, Snapdragon 8 Gen 3', 1299.99, 150, 'Smartphone', 'Samsung', 'https://example.com/img/s24u.jpg', '2026-05-03', 'ACTIVE'),
+(14, 'Galaxy S24', '256GB, Exynos 2400', 799.99, 250, 'Smartphone', 'Samsung', 'https://example.com/img/s24.jpg', '2026-05-04', 'ACTIVE'),
+(15, 'Pixel 8 Pro', '128GB, Google Tensor G3', 999.00, 100, 'Smartphone', 'Google', 'https://example.com/img/pixel8p.jpg', '2026-05-05', 'ACTIVE'),
+(16, 'Pixel 8', '128GB, Google Tensor G3', 699.00, 120, 'Smartphone', 'Google', 'https://example.com/img/pixel8.jpg', '2026-05-06', 'ACTIVE'),
+(17, 'OnePlus 12', '256GB, Snapdragon 8 Gen 3', 799.00, 80, 'Smartphone', 'OnePlus', 'https://example.com/img/op12.jpg', '2026-05-07', 'ACTIVE'),
+(18, 'Xiaomi 14 Pro', '256GB, Leica Optics', 899.00, 60, 'Smartphone', 'Xiaomi', 'https://example.com/img/mi14.jpg', '2026-05-08', 'ACTIVE'),
+(19, 'Sony Xperia 1 V', '256GB, 4K OLED', 1199.00, 30, 'Smartphone', 'Sony', 'https://example.com/img/xperia.jpg', '2026-05-09', 'OUT_OF_STOCK'),
+(20, 'Asus ROG Phone 8', '512GB, Gaming Smartphone', 1099.00, 45, 'Smartphone', 'Asus', 'https://example.com/img/rogphone.jpg', '2026-05-10', 'ACTIVE'),
+
+-- Audio / Headphones (21-30)
+(21, 'AirPods Pro 2', 'TWS Earbuds, Active Noise Cancellation', 249.00, 500, 'Audio', 'Apple', 'https://example.com/img/airpodspro.jpg', '2026-05-11', 'ACTIVE'),
+(22, 'AirPods 3', 'TWS Earbuds, Spatial Audio', 179.00, 400, 'Audio', 'Apple', 'https://example.com/img/airpods3.jpg', '2026-05-11', 'ACTIVE'),
+(23, 'Galaxy Buds 2 Pro', 'TWS Earbuds, Hi-Fi Sound', 229.00, 300, 'Audio', 'Samsung', 'https://example.com/img/buds2.jpg', '2026-05-12', 'ACTIVE'),
+(24, 'Pixel Buds Pro', 'TWS Earbuds, Volume EQ', 199.00, 150, 'Audio', 'Google', 'https://example.com/img/pixelbuds.jpg', '2026-05-12', 'ACTIVE'),
+(25, 'Sony WF-1000XM5', 'TWS Earbuds, Hi-Res Audio', 298.00, 200, 'Audio', 'Sony', 'https://example.com/img/wf1000xm5.jpg', '2026-05-13', 'ACTIVE'),
+(26, 'Sony WH-1000XM5', 'Over-ear Headphones, ANC', 398.00, 120, 'Audio', 'Sony', 'https://example.com/img/wh1000xm5.jpg', '2026-05-13', 'ACTIVE'),
+(27, 'Bose QuietComfort Ultra', 'Over-ear Headphones, Spatial Audio', 429.00, 90, 'Audio', 'Bose', 'https://example.com/img/boseqc.jpg', '2026-05-14', 'ACTIVE'),
+(28, 'Sennheiser Momentum 4', 'Over-ear Headphones, 60h Battery', 379.00, 60, 'Audio', 'Sennheiser', 'https://example.com/img/momentum4.jpg', '2026-05-14', 'ACTIVE'),
+(29, 'Beats Fit Pro', 'TWS Earbuds, Secure-Fit Wingtips', 199.00, 180, 'Audio', 'Beats', 'https://example.com/img/beatsfit.jpg', '2026-05-14', 'ACTIVE'),
+(30, 'Jabra Elite 10', 'TWS Earbuds, Dolby Atmos', 249.00, 110, 'Audio', 'Jabra', 'https://example.com/img/jabra.jpg', '2026-05-14', 'ACTIVE'),
+
+-- Wearables / Smartwatches (31-40)
+(31, 'Apple Watch Series 9', '45mm, Aluminum Case', 429.00, 250, 'Wearable', 'Apple', 'https://example.com/img/aw9.jpg', '2026-05-01', 'ACTIVE'),
+(32, 'Apple Watch Ultra 2', '49mm, Titanium Case', 799.00, 100, 'Wearable', 'Apple', 'https://example.com/img/awu2.jpg', '2026-05-02', 'ACTIVE'),
+(33, 'Galaxy Watch 6 Classic', '47mm, Stainless Steel', 399.00, 180, 'Wearable', 'Samsung', 'https://example.com/img/gw6c.jpg', '2026-05-03', 'ACTIVE'),
+(34, 'Galaxy Watch 6', '44mm, Aluminum', 329.00, 220, 'Wearable', 'Samsung', 'https://example.com/img/gw6.jpg', '2026-05-04', 'ACTIVE'),
+(35, 'Pixel Watch 2', '41mm, Aluminum Case', 349.00, 140, 'Wearable', 'Google', 'https://example.com/img/pw2.jpg', '2026-05-05', 'ACTIVE'),
+(36, 'Garmin Fenix 7 Pro', 'Multisport GPS Watch', 799.00, 50, 'Wearable', 'Garmin', 'https://example.com/img/fenix7.jpg', '2026-05-06', 'ACTIVE'),
+(37, 'Garmin Venu 3', 'GPS Smartwatch, AMOLED', 449.00, 80, 'Wearable', 'Garmin', 'https://example.com/img/venu3.jpg', '2026-05-07', 'ACTIVE'),
+(38, 'Fitbit Charge 6', 'Advanced Fitness Tracker', 159.00, 300, 'Wearable', 'Fitbit', 'https://example.com/img/charge6.jpg', '2026-05-08', 'ACTIVE'),
+(39, 'Amazfit GTR 4', 'Smartwatch, 14-day battery', 199.00, 120, 'Wearable', 'Amazfit', 'https://example.com/img/gtr4.jpg', '2026-05-09', 'ACTIVE'),
+(40, 'Suunto 9 Peak Pro', 'GPS Sports Watch', 549.00, 40, 'Wearable', 'Suunto', 'https://example.com/img/suunto.jpg', '2026-05-10', 'OUT_OF_STOCK'),
+
+-- Accessories & Storage (41-50)
+(41, 'Anker 735 Charger', 'GaNPrime 65W, 3 Ports', 59.99, 400, 'Accessory', 'Anker', 'https://example.com/img/anker735.jpg', '2026-05-11', 'ACTIVE'),
+(42, 'Belkin MagSafe 3-in-1', 'Wireless Charging Stand', 149.99, 150, 'Accessory', 'Belkin', 'https://example.com/img/belkin.jpg', '2026-05-11', 'ACTIVE'),
+(43, 'UGREEN USB-C Hub 7-in-1', '4K HDMI, 100W PD', 49.99, 500, 'Accessory', 'UGREEN', 'https://example.com/img/ugreen.jpg', '2026-05-12', 'ACTIVE'),
+(44, 'Logitech MX Master 3S', 'Wireless Performance Mouse', 99.99, 200, 'Accessory', 'Logitech', 'https://example.com/img/mxmaster.jpg', '2026-05-12', 'ACTIVE'),
+(45, 'Logitech MX Keys S', 'Advanced Wireless Keyboard', 109.99, 180, 'Accessory', 'Logitech', 'https://example.com/img/mxkeys.jpg', '2026-05-13', 'ACTIVE'),
+(46, 'Magic Mouse', 'Wireless, Rechargeable', 79.00, 250, 'Accessory', 'Apple', 'https://example.com/img/magicmouse.jpg', '2026-05-13', 'ACTIVE'),
+(47, 'Magic Keyboard', 'With Touch ID, Numeric Keypad', 179.00, 120, 'Accessory', 'Apple', 'https://example.com/img/magickeyboard.jpg', '2026-05-14', 'ACTIVE'),
+(48, 'Samsung T7 Shield 1TB', 'Portable SSD, IP65', 99.99, 350, 'Storage', 'Samsung', 'https://example.com/img/t7shield.jpg', '2026-05-14', 'ACTIVE'),
+(49, 'SanDisk 512GB Extreme', 'MicroSDXC UHS-I Card', 45.99, 600, 'Storage', 'SanDisk', 'https://example.com/img/sandisk.jpg', '2026-05-14', 'ACTIVE'),
+(50, 'Peak Design Everyday Backpack', '20L, Zip Camera Bag', 299.95, 45, 'Accessory', 'Peak Design', 'https://example.com/img/peakdesign.jpg', '2026-05-14', 'ACTIVE');
