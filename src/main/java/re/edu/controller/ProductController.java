@@ -32,4 +32,7 @@ public class ProductController {
 
 
     // Các chức năng còn lại
+    // Lấy thông tin theo ID : check tồn tai : trả về 404 -NOT FOUND
+    // Xóa thành công : 200 (xóa hẳn và trả về dữ liệu), 204 (ko trả về body)
+
 }
