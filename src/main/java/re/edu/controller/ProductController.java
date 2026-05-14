@@ -6,11 +6,12 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import re.edu.dto.request.ProductAdd;
+import re.edu.dto.request.ProductUpdate;
 import re.edu.dto.response.PageDto;
 import re.edu.dto.response.ProductDto;
+import re.edu.entity.Product;
 import re.edu.service.ProductService;
 
 @RestController
@@ -34,5 +35,36 @@ public class ProductController {
     // Các chức năng còn lại
     // Lấy thông tin theo ID : check tồn tai : trả về 404 -NOT FOUND
     // Xóa thành công : 200 (xóa hẳn và trả về dữ liệu), 204 (ko trả về body)
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getById(@PathVariable("id") Integer id){
+        try {
+            return ResponseEntity.ok(productService.getById(id));
+
+        }catch (RuntimeException e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
+
+    @PostMapping
+    public ResponseEntity<ProductDto> create(@ModelAttribute ProductAdd request){
+        return ResponseEntity.ok(productService.create(request));
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<?> update(@PathVariable Integer id,@ModelAttribute ProductUpdate request){
+       try{
+           return ResponseEntity.ok(productService.update(request, id));
+       }catch (RuntimeException e){
+           return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+       }
+    } @DeleteMapping("/{id}")
+    public ResponseEntity<?> delete(@PathVariable Integer id){
+        try {
+            productService.deleteById(id);
+            return ResponseEntity.noContent().build();
+        }catch (RuntimeException e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
+
 
 }
